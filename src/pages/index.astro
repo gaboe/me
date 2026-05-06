@@ -1,0 +1,465 @@
+---
+import "../styles/global.css";
+
+const experience = [
+  {
+    company: "Blogic",
+    role: "Principal Software Consultant",
+    period: "Mar 2024 - Present",
+    meta: "Zlin, Czechia · Hybrid",
+    summary:
+      "Strategic technical leadership, product architecture, and consulting delivery for clients who need a stable development system, not just fast code output.",
+  },
+  {
+    company: "Blogic",
+    role: "Lead Software Consultant",
+    period: "Mar 2022 - Jun 2024",
+    meta: "Zlin, Czechia",
+    summary:
+      "Led delivery, coordinated engineering decisions, and took ownership of technical solutions across client projects.",
+  },
+  {
+    company: "Blogic",
+    role: "Senior Software Developer",
+    period: "Apr 2019 - Mar 2022",
+    meta: "Zlin, Czechia",
+    summary:
+      "Designed and implemented production applications, mentored developers, and moved from individual delivery toward broader responsibility for solution quality.",
+  },
+  {
+    company: "Blogic",
+    role: "Software Developer",
+    period: "Jun 2017 - Apr 2019",
+    meta: "District Zlin, Czech Republic",
+    summary:
+      "Full-stack development, delivery of client-facing functionality, and the practical foundation for long-term consulting work.",
+  },
+  {
+    company: "Blogic",
+    role: "Junior Developer",
+    period: "Jul 2016 - May 2017",
+    meta: "District Zlin, Czech Republic · Half-time job",
+    summary:
+      "First professional engineering role during a part-time engagement, with fast growth on real projects and a strong grounding in the craft.",
+  },
+];
+
+const ventures = [
+  {
+    name: "Agentsfera",
+    title: "CTO",
+    period: "Jun 2025 - Jan 2026",
+    note: "Ended on Jan 1, 2026",
+    summary:
+      "Technical direction for an agency focused on AI agents and automation. The role ended at the start of 2026.",
+  },
+  {
+    name: "Coinwage",
+    title: "CTO, Co-Founder",
+    period: "Jan 2022 - Jan 2026",
+    note: "Ended on Jan 1, 2026",
+    summary:
+      "Co-founder and CTO role in a product around compensation and crypto. The project and active executive role are now closed.",
+  },
+];
+
+const strengths = [
+  "Product and system architecture",
+  "Technical leadership and mentoring",
+  "AI agents, automation, and internal tools",
+  "Full-stack delivery of production applications",
+  "Consulting work with a high level of ownership",
+  "Translating business goals into technical decisions",
+];
+
+const engagementSignals = [
+  "Architecture rescue for products that already have users and complexity",
+  "Technical leadership when teams need clearer decisions and delivery shape",
+  "AI agents, automation, and internal tools connected to real workflows",
+  "Consulting delivery that balances business pressure with system durability",
+];
+
+const audienceRoutes = [
+  {
+    code: "CLIENT",
+    title: "Need technical order",
+    summary:
+      "Use me when the product direction is clear enough to matter, but the engineering system needs structure, ownership, and sharper decisions.",
+    action: "Discuss collaboration",
+    href: "#kontakt",
+  },
+  {
+    code: "RECRUITER",
+    title: "Validate seniority",
+    summary:
+      "Long-term Blogic trajectory from junior developer to principal consultant, with hands-on delivery and leadership across client work.",
+    action: "Read career log",
+    href: "#skusenosti",
+  },
+  {
+    code: "FOUNDER",
+    title: "Evaluate judgment",
+    summary:
+      "CTO and co-founder experience, archived precisely, plus practical consulting judgment for ambiguous technical and product decisions.",
+    action: "Review operating rules",
+    href: "#principles",
+  },
+];
+
+const principles = [
+  "Understand the problem first, then design the technology.",
+  "Long-term maintainability is part of delivery, not an afterthought.",
+  "A good technical leader makes decision-making easier for the whole team.",
+];
+
+const firstProfessionalRoleStartedAt = "2016-07-01T00:00:00Z";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Professional website for Gabriel Ečegi, principal software consultant, technical leader, and former CTO."
+    />
+    <title>Gabriel Ečegi · Principal Software Consultant</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="brand" href="#top" aria-label="Gabriel Ečegi home">
+            <span class="brand-mark">GE</span>
+            <span class="brand-meta">
+              <strong>Gabriel Ečegi</strong>
+              <small>PSC-0916 / Technical Partner</small>
+            </span>
+          </a>
+          <div class="nav-links">
+            <a href="#profil">Profile</a>
+            <a href="#skusenosti">Experience</a>
+            <a href="#kontakt">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hud-globe" aria-hidden="true">
+          <div class="globe-core">
+            <span class="axis vertical"></span>
+            <span class="axis horizontal"></span>
+            <span class="orbit orbit-a"></span>
+            <span class="orbit orbit-b"></span>
+            <span class="orbit orbit-c"></span>
+            <span class="scan-sweep"></span>
+          </div>
+          <div class="globe-reticle"></div>
+          <div class="telemetry">
+            <span>BASE: ZLIN</span>
+            <span>REMOTE/HYBRID</span>
+            <span>LINK: OPEN</span>
+          </div>
+        </div>
+
+        <div class="hero-grid" id="top">
+          <div class="hero-copy">
+            <div class="system-strip" aria-hidden="true">
+              <span>SYS-ID: GC/PSC-0916</span>
+              <span>MODE: CONSULT</span>
+              <span>STATUS: ACTIVE</span>
+            </div>
+            <p class="eyebrow">Principal Software Consultant · Technical Leader</p>
+            <h1 id="hero-title">Gabriel Ečegi</h1>
+            <p class="lead">
+              I help companies build software that holds together technically
+              and as a product. I bring almost a decade of continuous practice
+              at Blogic, experience in technical leadership, and my own ventures,
+              which I closed on Jan 1, 2026.
+            </p>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button primary" href="#kontakt">Get in touch</a>
+              <a class="button secondary" href="#routes">Select signal</a>
+            </div>
+          </div>
+
+          <aside class="signal-panel" aria-label="Professional summary">
+            <div class="panel-header">
+              <span>OBJECT MONITOR</span>
+              <span>REV. 2026-01</span>
+            </div>
+            <figure class="profile-lockup">
+              <img src="/profile.png" alt="Black and white profile photo of Gabriel Ečegi" />
+              <figcaption>
+                <span>ID VISUAL</span>
+                <span>GC/PROFILE</span>
+              </figcaption>
+            </figure>
+            <div>
+              <span class="metric elapsed-metric" data-elapsed-since={firstProfessionalRoleStartedAt}>
+                <span data-elapsed-years>9Y</span>
+                <span data-elapsed-rest>0M:0D:0m:0s</span>
+              </span>
+              <span class="label">continuous software practice</span>
+            </div>
+            <div>
+              <span class="metric">SW Principal</span>
+              <span class="label">consulting, architecture, leadership</span>
+            </div>
+            <div>
+              <span class="metric">CTO</span>
+              <span class="label">experience from own ventures and agency work</span>
+            </div>
+            <div class="barcode" aria-hidden="true"></div>
+          </aside>
+        </div>
+
+        <div class="hero-scanline" aria-hidden="true">
+          <span>TRACE: CONSULTING-CHANNEL</span>
+          <span>INPUT: COMPLEXITY</span>
+          <span>OUTPUT: DECISION SYSTEM</span>
+        </div>
+      </section>
+
+      <section class="section engagement" aria-labelledby="engagement-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-00</span>
+          <span>ENGAGEMENT SIGNAL</span>
+          <span>4 CONDITIONS</span>
+        </div>
+        <div class="section-kicker">Use when</div>
+        <div class="engagement-grid">
+          <h2 id="engagement-title">Useful when software needs a steadier operating system.</h2>
+          <div class="signal-list">
+            {engagementSignals.map((signal, index) => (
+              <article>
+                <span>{`SIG-${String(index + 1).padStart(2, "0")}`}</span>
+                <p>{signal}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="profil" aria-labelledby="profile-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-01</span>
+          <span>PROFILE DOSSIER</span>
+          <span>AUTH/GC</span>
+        </div>
+        <div class="section-kicker">Profile / dossier</div>
+        <div class="split">
+          <h2 id="profile-title">A technical partner for companies that need clear decisions.</h2>
+          <div class="copy-stack">
+            <p>
+              My foundation is hands-on engineering, but today my highest value
+              comes from combining architecture, consulting leadership, and the
+              ability to move a project from an unclear brief into a working
+              system.
+            </p>
+            <p>
+              I have been with Blogic long-term, moving from junior developer to
+              principal software consultant. Alongside that, I founded and
+              technically led my own projects. These CTO roles are no longer
+              presented as current positions, but as important experience in
+              ownership, decision-making, and responsibility for product
+              direction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section routes" id="routes" aria-labelledby="routes-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-01B</span>
+          <span>AUDIENCE ROUTER</span>
+          <span>3 CHANNELS</span>
+        </div>
+        <div class="section-kicker">Signal routing</div>
+        <div class="section-header">
+          <h2 id="routes-title">Pick the signal you came to verify.</h2>
+          <p>
+            The same record supports three different checks: client fit,
+            seniority validation, and founder-level technical judgment.
+          </p>
+        </div>
+        <div class="route-grid">
+          {audienceRoutes.map((route) => (
+            <article class="route-card">
+              <span class="route-code">{route.code}</span>
+              <h3>{route.title}</h3>
+              <p>{route.summary}</p>
+              <a href={route.href}>{route.action}</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section strengths" aria-labelledby="strengths-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-02</span>
+          <span>CAPABILITY MATRIX</span>
+          <span>6 MODULES</span>
+        </div>
+        <div class="section-kicker">Capability matrix</div>
+        <h2 id="strengths-title">Core strengths</h2>
+        <div class="strength-grid">
+          {strengths.map((strength, index) => (
+            <div class="strength-item">
+              <span>{`CAP-${String(index + 1).padStart(2, "0")}`}</span>
+              <p>{strength}</p>
+              <i aria-hidden="true"></i>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="section timeline" id="skusenosti" aria-labelledby="experience-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-03</span>
+          <span>CAREER LOG</span>
+          <span>SEQ/2016-2026</span>
+        </div>
+        <div class="section-kicker">Experience</div>
+        <div class="section-header">
+          <h2 id="experience-title">Career trajectory</h2>
+          <p>
+            The main throughline is Blogic. Entrepreneurial and CTO experience
+            is listed separately and was closed on Jan 1, 2026.
+          </p>
+        </div>
+
+        <div class="timeline-list">
+          {experience.map((item) => (
+            <article class="timeline-item">
+              <div class="timeline-date">{item.period}</div>
+              <div class="timeline-content">
+                <span class="status-chip">Verified record</span>
+                <h3>{item.role}</h3>
+                <p class="company">{item.company}</p>
+                <p class="meta">{item.meta}</p>
+                <p>{item.summary}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section ventures" aria-labelledby="ventures-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-04</span>
+          <span>ARCHIVE</span>
+          <span>CLOSED ROLES</span>
+        </div>
+        <div class="section-kicker">Own ventures and CTO roles</div>
+        <div class="section-header">
+          <h2 id="ventures-title">Closed chapters that shaped leadership</h2>
+          <p>
+            These experiences should be communicated precisely: they were
+            important, but they are no longer active roles today.
+          </p>
+        </div>
+
+        <div class="venture-grid">
+          {ventures.map((venture, index) => (
+            <article class="venture-card">
+              <div class="card-topline">
+                <span>{`ARCHIVE-${String(index + 1).padStart(2, "0")} / ${venture.name}`}</span>
+                <span>{venture.note}</span>
+              </div>
+              <h3>{venture.title}</h3>
+              <p class="period">{venture.period}</p>
+              <p>{venture.summary}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section principles" id="principles" aria-labelledby="principles-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-05</span>
+          <span>OPERATING RULESET</span>
+          <span>3 DIRECTIVES</span>
+        </div>
+        <div class="section-kicker">Operating principles</div>
+        <h2 id="principles-title">Principles</h2>
+        <div class="principle-list">
+          {principles.map((principle, index) => (
+            <article>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <p>{principle}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="contact" id="kontakt" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact channel</p>
+          <h2 id="contact-title">Send the unclear technical situation, not a polished brief.</h2>
+          <p>
+            The useful conversation usually starts with a product constraint,
+            delivery risk, architecture question, or leadership gap.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:gabrielecegi@gmail.com">gabrielecegi@gmail.com</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/gabrielecegi/" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="#skusenosti">Career log</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      const elapsedMetrics = document.querySelectorAll("[data-elapsed-since]");
+
+      function getElapsedParts(start: Date, end: Date) {
+        let years = end.getUTCFullYear() - start.getUTCFullYear();
+        let cursor = new Date(start);
+        cursor.setUTCFullYear(start.getUTCFullYear() + years);
+
+        if (cursor > end) {
+          years -= 1;
+          cursor = new Date(start);
+          cursor.setUTCFullYear(start.getUTCFullYear() + years);
+        }
+
+        let months = end.getUTCMonth() - cursor.getUTCMonth();
+        if (months < 0) {
+          months += 12;
+        }
+
+        const monthCursor = new Date(cursor);
+        monthCursor.setUTCMonth(cursor.getUTCMonth() + months);
+        if (monthCursor > end) {
+          months -= 1;
+          monthCursor.setUTCMonth(cursor.getUTCMonth() + months);
+        }
+
+        const remainingMs = end.getTime() - monthCursor.getTime();
+        const days = Math.floor(remainingMs / 86400000);
+        const minutes = Math.floor((remainingMs % 3600000) / 60000);
+        const seconds = Math.floor((remainingMs % 60000) / 1000);
+
+        return { days, minutes, months, seconds, years };
+      }
+
+      function updateElapsedMetrics() {
+        const now = new Date();
+
+        elapsedMetrics.forEach((metric) => {
+          const start = new Date(metric.getAttribute("data-elapsed-since") ?? "");
+          if (Number.isNaN(start.getTime())) return;
+
+          const { years, months, days, minutes, seconds } = getElapsedParts(start, now);
+          const yearsElement = metric.querySelector("[data-elapsed-years]");
+          const restElement = metric.querySelector("[data-elapsed-rest]");
+
+          if (yearsElement) yearsElement.textContent = `${years}Y`;
+          if (restElement) restElement.textContent = `${months}M:${days}D:${minutes}m:${seconds}s`;
+        });
+      }
+
+      updateElapsedMetrics();
+      setInterval(updateElapsedMetrics, 1000);
+    </script>
+  </body>
+</html>

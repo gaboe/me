@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.agents/
+.vite/
+.DS_Store
+skills-lock.json
+
+desktop*.png
+mobile*.png
+full-review.png

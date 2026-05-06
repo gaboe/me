@@ -1,0 +1,24 @@
+{
+  "name": "gabrielecegi-career-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "format": "oxfmt --write src package.json astro.config.mjs tsconfig.json",
+    "format:check": "oxfmt --check src package.json astro.config.mjs tsconfig.json",
+    "lint": "oxlint src astro.config.mjs",
+    "check": "bun run format:check && bun run lint && astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "astro": "^6.2.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "oxfmt": "latest",
+    "oxlint": "latest"
+  }
+}
