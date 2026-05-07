@@ -243,7 +243,7 @@ main {
   display: grid;
   gap: clamp(24px, 5vw, 72px);
   grid-template-columns: minmax(0, 1fr) minmax(300px, 440px);
-  margin-top: 16svh;
+  margin-top: clamp(42px, 10svh, 112px);
   position: relative;
   z-index: 1;
 }
@@ -554,6 +554,7 @@ h3 {
   font-family: var(--font-mono);
   font-size: 0.62rem;
   font-weight: 900;
+  gap: 16px;
   justify-content: space-between;
   margin-bottom: 8px;
 }
@@ -568,6 +569,11 @@ h3 {
   filter: drop-shadow(0 0 8px var(--accent-faint));
   overflow: visible;
   width: 100%;
+}
+
+.holo-object {
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .blueprint-diagram path,
@@ -587,6 +593,28 @@ h3 {
 
 .diagram-nodes path {
   stroke-width: 3;
+}
+
+.diagram-panels path {
+  fill: oklch(0.73 0.055 132 / 0.18);
+  filter: drop-shadow(0 0 12px var(--accent-soft));
+  stroke: var(--accent);
+  stroke-width: 1.2;
+}
+
+.holo-panel {
+  animation: holo-panel 10s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+.panel-a {
+  animation-delay: 0s;
+}
+
+.panel-b {
+  animation-delay: -5s;
 }
 
 .blueprint-diagram text {
@@ -1342,7 +1370,7 @@ h3 {
   }
 
   .hero-grid {
-    margin-top: 12svh;
+    margin-top: 44px;
   }
 
   .strength-grid,
@@ -1493,6 +1521,7 @@ h3 {
   .globe-core,
   .orbit,
   .scan-sweep,
+  .holo-panel,
   .hero-scanline,
   .hero-scanline::before,
   .signal-list article::after,
@@ -1583,5 +1612,38 @@ h3 {
 
   to {
     transform: translateY(560%);
+  }
+}
+
+@keyframes holo-panel {
+  0%,
+  100% {
+    opacity: 0.26;
+    transform: scaleY(1) translateY(0);
+  }
+
+  18% {
+    opacity: 0.42;
+    transform: scaleY(1) translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scaleY(0.025) translateY(0);
+  }
+
+  42% {
+    opacity: 0.46;
+    transform: scaleY(1) translateY(0);
+  }
+
+  68% {
+    opacity: 0.72;
+    transform: scaleY(0.04) translateY(0);
+  }
+
+  82% {
+    opacity: 0.3;
+    transform: scaleY(1) translateY(0);
   }
 }
