@@ -72,6 +72,45 @@ const strengths = [
   "Translating business goals into technical decisions",
 ];
 
+const openSourceProjects = [
+  {
+    name: "rest2ts",
+    href: "https://github.com/gaboe/rest2ts",
+    meta: "TypeScript · API tooling",
+    summary: "Generates modern TypeScript types from REST/OpenAPI schemas.",
+  },
+  {
+    name: "open-ebook-translator",
+    href: "https://github.com/gaboe/open-ebook-translator",
+    meta: "TypeScript · LLM utility",
+    summary: "Translates EPUB books with LLMs while preserving structure, markup, and reading flow.",
+  },
+  {
+    name: "opencode-gitbutler",
+    href: "https://github.com/gaboe/opencode-gitbutler",
+    meta: "TypeScript · agent workflow",
+    summary: "OpenCode plugin that connects AI coding agents with GitButler branch management.",
+  },
+  {
+    name: "oc-codex-multi-account",
+    href: "https://github.com/gaboe/oc-codex-multi-account",
+    meta: "TypeScript · OpenCode plugin",
+    summary: "Multi-account routing for Codex usage with sticky primary selection and fallback.",
+  },
+  {
+    name: "toggl-jira-sync",
+    href: "https://github.com/gaboe/toggle-jira-sync",
+    meta: "Rust · CLI",
+    summary: "Local CLI for syncing Toggl time entries into Jira worklogs with SQLite state.",
+  },
+  {
+    name: "vocative-cz",
+    href: "https://github.com/gaboe/vocative-cz",
+    meta: "TypeScript · language library",
+    summary: "Czech vocative-case library for first names, surnames, and full names.",
+  },
+];
+
 const engagementSignals = [
   "Architecture rescue for products that already have users and complexity",
   "Technical leadership when teams need clearer decisions and delivery shape",
@@ -124,6 +163,7 @@ const firstProfessionalRoleStartedAt = "2016-07-01T00:00:00Z";
       name="description"
       content="Professional website for Gabriel Ečegi, principal software consultant, technical leader, and former CTO."
     />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>Gabriel Ečegi · Principal Software Consultant</title>
   </head>
   <body>
@@ -139,6 +179,7 @@ const firstProfessionalRoleStartedAt = "2016-07-01T00:00:00Z";
           </a>
           <div class="nav-links">
             <a href="#profil">Profile</a>
+            <a href="#open-source">Open source</a>
             <a href="#skusenosti">Experience</a>
             <a href="#kontakt">Contact</a>
           </div>
@@ -346,6 +387,39 @@ const firstProfessionalRoleStartedAt = "2016-07-01T00:00:00Z";
             </div>
           ))}
         </div>
+      </section>
+
+      <section class="section open-source" id="open-source" aria-labelledby="open-source-title">
+        <div class="section-rail" aria-hidden="true">
+          <span>REG-02B</span>
+          <span>PUBLIC SOFTWARE</span>
+          <span>GITHUB/GABOE</span>
+        </div>
+        <div class="section-kicker">Open source</div>
+        <div class="section-header">
+          <h2 id="open-source-title">Small public tools that expose the working surface.</h2>
+          <p>
+            A compact signal from GitHub: developer tooling, agent workflow
+            utilities, language handling, and practical automation.
+          </p>
+        </div>
+        <div class="oss-list">
+          {openSourceProjects.map((project, index) => (
+            <article>
+              <span class="oss-index">{`OSS-${String(index + 1).padStart(2, "0")}`}</span>
+              <div>
+                <a href={project.href} rel="noreferrer">
+                  {project.name}
+                </a>
+                <p>{project.summary}</p>
+              </div>
+              <span class="oss-meta">{project.meta}</span>
+            </article>
+          ))}
+        </div>
+        <a class="source-link" href="https://github.com/gaboe" rel="noreferrer">
+          Inspect full GitHub index
+        </a>
       </section>
 
       <section class="section timeline" id="skusenosti" aria-labelledby="experience-title">

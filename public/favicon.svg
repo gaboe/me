@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#090a08" />
+  <path d="M8 8h48v48H8z" fill="none" stroke="#91a86f" stroke-width="2" />
+  <path d="M14 22h8V14M42 14h8v8M50 42v8h-8M22 50h-8v-8" fill="none" stroke="#d8ddd1" stroke-opacity=".72" stroke-width="2" />
+  <path d="M18 32h28M32 18v28" stroke="#91a86f" stroke-opacity=".45" stroke-width="1" />
+  <text x="32" y="38" fill="#e6e8df" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" font-weight="900" text-anchor="middle">GE</text>
+</svg>

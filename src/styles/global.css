@@ -913,6 +913,7 @@ h3 {
 }
 
 .strengths,
+.open-source,
 .principles {
   background: var(--panel);
 }
@@ -1059,6 +1060,76 @@ h3 {
   font-weight: 900;
   margin-top: auto;
   padding-top: 12px;
+}
+
+.oss-list {
+  border-top: 1px solid var(--line);
+}
+
+.oss-list article {
+  align-items: start;
+  border-bottom: 1px solid var(--line-soft);
+  display: grid;
+  gap: clamp(16px, 3vw, 34px);
+  grid-template-columns: minmax(72px, 0.18fr) minmax(0, 1fr) minmax(160px, 0.32fr);
+  padding: 18px 0;
+  position: relative;
+}
+
+.oss-list article::after {
+  background:
+    linear-gradient(90deg, var(--accent) 0 10px, transparent 10px 15px, var(--ink-faint) 15px 24px),
+    linear-gradient(90deg, transparent, var(--accent-faint));
+  content: "";
+  height: 4px;
+  opacity: 0.78;
+  position: absolute;
+  right: 0;
+  top: 23px;
+  width: min(120px, 18vw);
+}
+
+.oss-index,
+.oss-meta,
+.source-link {
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.oss-list a {
+  color: var(--ink);
+  display: inline-flex;
+  font-size: clamp(1.08rem, 2vw, 1.7rem);
+  font-weight: 950;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+
+.oss-list a:hover,
+.source-link:hover {
+  color: var(--accent);
+}
+
+.oss-list p {
+  color: var(--ink-dim);
+  margin: 0;
+  max-width: 760px;
+  text-transform: none;
+}
+
+.oss-meta {
+  justify-self: end;
+  padding-right: min(132px, 20vw);
+  text-align: right;
+}
+
+.source-link {
+  border: 1px solid var(--line-soft);
+  display: inline-flex;
+  margin-top: 24px;
+  padding: 10px 12px;
 }
 
 .section-header {
@@ -1280,6 +1351,17 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .oss-list article {
+    grid-template-columns: minmax(72px, 0.2fr) minmax(0, 1fr);
+  }
+
+  .oss-meta {
+    grid-column: 2;
+    justify-self: start;
+    padding-right: 0;
+    text-align: left;
+  }
+
   .contact {
     align-items: start;
   }
@@ -1384,6 +1466,26 @@ h3 {
 
   .principle-list article {
     grid-template-columns: 1fr;
+  }
+
+  .oss-list article {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .oss-list article::after {
+    left: 0;
+    right: auto;
+    top: 16px;
+    width: 82px;
+  }
+
+  .oss-index {
+    padding-top: 10px;
+  }
+
+  .oss-meta {
+    grid-column: auto;
   }
 }
 
